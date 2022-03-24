@@ -6,7 +6,9 @@ So please be indulgent, if you notice some noob errors!!!
 
 The logical of the game is all program in Vanilla JavaScript and the rendering is handled in React.
 Please feel free to comment, I'm always up to improve my work. 
-If you think, I should add comments in my code to facilitate the reading of it, please tell me!
+If you think, I should add comments in my code to facilitate the reading of it, please also tell me!
 
-Thanks!!!
+My goal is to be as professional and industry ready as possible!!!
+
+Thanks you!!!
 
