@@ -1,7 +1,7 @@
 {
-  "name": "scoreboard",
+  "name": "chess-app",
   "version": "0.1.0",
-  "private": true,
+  "private": false,
   "dependencies": {
     "prop-types": "^15.6.2",
     "react": "^16.14.0",
