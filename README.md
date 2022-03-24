@@ -1,5 +1,5 @@
 # chess-app
-My take on the classical chess app!
+My take on the classical portfolio chess app!
 
 Note that is my first shared project on GitHub and it's still a work in progress...
 So please be indulgent, if you notice some noob errors!!!
