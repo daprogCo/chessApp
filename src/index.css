@@ -1,0 +1,274 @@
+@font-face {
+  font-family: "text";
+  src: url("fonts/Aileron-Italic-webfont.woff") format("woff");
+  font-style: italic;
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: "text";
+  src: url("fonts/Aileron-Regular-webfont.woff") format("woff");
+  font-style: normal;
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: "text";
+  src: url("fonts/Aileron-SemiBold-webfont.woff") format("woff");
+  font-style: normal;
+  font-weight: 500;
+}
+
+@font-face {
+  font-family: "text";
+  src: url("fonts/Aileron-Bold-webfont.woff") format("woff");
+  font-style: normal;
+  font-weight: 600;
+}
+
+@font-face {
+  font-family: "portfolio";
+  src: url("fonts/BungeeLayers-Inline-webfont.woff") format("woff");
+  font-style: normal;
+  font-weight: 300;
+}
+
+@font-face {
+  font-family: "portfolio";
+  src: url("fonts/Bungee-Regular-webfont.woff") format("woff");
+  font-style: normal;
+  font-weight: 600;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "text", sans-serif;
+  font-weight: 400;
+  line-height: 1.8em;
+  font-size: 18px;
+  color: #5D6063;
+}
+
+button {
+  all: unset
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: "portfolio", sans-serif;
+  font-weight: 600;
+  line-height: 1.3em;
+  margin-top: 20px;
+}
+
+header {
+  text-align: center;
+}
+
+nav {
+  background-color: #145d59;
+}
+
+nav ul {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+
+  width: 100%;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+nav li {
+  list-style-type: none;
+
+  width: 50%;
+  padding-top: .5em;
+  padding-bottom: .5em;
+
+  border-top: 1px solid #276f6b;
+}
+
+nav li:nth-of-type(1),
+nav li:nth-of-type(2) {
+  border-top: none;
+}
+
+nav li:nth-of-type(2n) {
+  border-left: 1px solid #276f6b;
+}
+
+nav a {
+  font-family: "portfolio", sans-serif;
+  font-size: 14px;
+}
+
+nav a:link,
+nav a:visited {
+  color: #fff;
+  text-decoration: none;
+}
+
+nav a:hover,
+nav a:visited:hover,
+nav a:active,
+nav a:visited:active {
+  color: #fceca4;
+  font-weight: 600;
+}
+
+.page {
+  max-width: 1000px;
+  padding: 30px;
+  margin: 0 auto;
+}
+
+.container-game {
+  width: 100%;
+  padding-top: 100%;
+  position: relative;
+}
+
+.game-board {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  margin: auto;
+}
+
+.board {
+  background-color: #838383;
+  border: 1px solid #697a67;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.board > div {
+  width: 12.5%;
+  height: 12.5%;
+}
+
+.top-edge {
+  grid-area: top;
+}
+
+.left-edge {
+  grid-area: left;
+}
+
+.right-edge {
+  grid-area: right;
+}
+
+.bottom-edge {
+  grid-area: bottom;
+}
+
+.board {
+  grid-area: center;
+}
+
+.game-board {
+  display: grid;
+  grid: "top top top" "left center right" "bottom bottom bottom";
+  grid-template-columns: 0% 100% 0%;
+  grid-template-rows: 0% 100% 0%;
+}
+
+.top-edge ul {
+  visibility: hidden;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  width: 90%;
+  margin: 0 auto;
+}
+
+.top-edge li {
+  list-style-type: none;
+  width: 12.5%;
+  text-align: center;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.number {
+  visibility: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-right: 50%;
+  height: 12.5%;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.whiteCase {
+  background-color: #b8b8b8;
+}
+
+.pieces {
+  width: 100%;
+  height: auto;
+  padding-top: 10%;
+  text-align: center;
+}
+
+.queen, .king, .knight, .pawn, .bishop, .rook {
+  height: auto;
+}
+
+.queen, .king, .knight {
+  max-width: 85%;
+}
+
+.knight {
+  margin-top: 5%;
+}
+
+.bishop {
+  max-width: 95%;
+}
+
+.rook {
+  max-width: 62%;
+  margin-top: 8%;
+}
+
+.pawn {
+  max-width: 52%;
+  margin-top: 12%;
+}
+
+@media only screen and (min-width: 750px) {
+
+  .game-board {
+    grid-template-columns: 5% 90% 5%;
+    grid-template-rows: 5% 90% 5%;
+    width: 750px;
+    height: 750px;
+    margin: 0 auto;
+  }
+  .top-edge ul,
+  .number {
+    visibility: visible;
+  }
+}
+
+@media only screen and (min-width: 750px) {
+  nav li {
+    width: 16.66%;
+    border-left: 1px solid #276f6b;
+  }
+  nav li:last-of-type {
+    border-right: 1px solid #276f6b;
+  }
+}
