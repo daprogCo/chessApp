@@ -14,6 +14,11 @@ To get a local copy up and running follow these simple steps.
   ```sh
   npm install npm@latest -g
   ```
+  
+  * npm
+  ```sh
+  npm install git -g
+  ```
 
 ### Installation
 
