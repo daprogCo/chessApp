@@ -6,7 +6,6 @@ So please be indulgent, if you notice some noob errors!!!
 
 ## Getting Started
 
-This is an example of how you may give instructions on setting up your project locally.
 To get a local copy up and running follow these simple example steps.
 
 ### Prerequisites
@@ -19,7 +18,7 @@ To get a local copy up and running follow these simple example steps.
 ### Installation
 
 1. Open a terminal window on Node or GitBash 
-2. Clone the repo
+2. Clone the repo into a local directory of your choice
    ```sh
    git clone https://github.com/reaktionlab/chess-app.git
    ```
@@ -31,6 +30,8 @@ To get a local copy up and running follow these simple example steps.
    ```sh
    npm start
    ```
+
+## About the App
 
 Right now, the DOM interface let you move pieces in respect of the chess rules.
 Click first on the piece you want to move, and after click the space you want to move it to.
