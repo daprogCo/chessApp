@@ -6,7 +6,7 @@ So please be indulgent, if you notice some noob errors!!!
 
 ## Getting Started
 
-To get a local copy up and running follow these simple example steps.
+To get a local copy up and running follow these simple steps.
 
 ### Prerequisites
 
