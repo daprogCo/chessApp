@@ -4,6 +4,35 @@ My take on the classical portfolio chess app!
 Note that it's my first shared project on GitHub and it's still a work in progress...
 So please be indulgent, if you notice some noob errors!!!
 
+## Getting Started
+
+This is an example of how you may give instructions on setting up your project locally.
+To get a local copy up and running follow these simple example steps.
+
+### Prerequisites
+
+This is an example of how to list things you need to use the software and how to install them.
+* npm
+  ```sh
+  npm install npm@latest -g
+  ```
+
+### Installation
+
+1. Get a free API Key at [https://example.com](https://example.com)
+2. Clone the repo
+   ```sh
+   git clone https://github.com/reaktionlab/chess-app.git
+   ```
+3. Install NPM packages
+   ```sh
+   npm install
+   ```
+4. Enter your API in `config.js`
+   ```js
+   const API_KEY = 'ENTER YOUR API';
+   ```
+
 Right now, the DOM interface let you move pieces in respect of the chess rules.
 Click first on the piece you want to move, and after click the space you want to move it to.
 Pawn will always promote into a queen. 
