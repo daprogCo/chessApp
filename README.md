@@ -38,7 +38,7 @@ To get a local copy up and running follow these simple steps.
 
 ## About the App
 
-Right now, the DOM interface let you move pieces in respect of the chess rules.
+Right now, the interface loaded on a browser let you move pieces in respect of the chess rules.
 Click first on the piece you want to move, and after click the space you want to move it to.
 Pawn will always promote into a queen. 
 Game situation as Invalid Move, Checkmate or Stalemate should be mentionned by a console message.
