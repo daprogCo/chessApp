@@ -4,6 +4,9 @@ My take on the classical portfolio chess app!
 Note that it's my first shared project on GitHub and it's still a work in progress...
 So please be indulgent, if you notice some noob errors!!!
 
+Here's a link to try out the online build:
+https://genuine-cendol-55043d.netlify.app
+
 ## Getting Started
 
 To get a local copy up and running follow these simple steps.
