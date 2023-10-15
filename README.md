@@ -25,7 +25,7 @@ To get a local copy up and running follow these simple steps.
 
 ### Installation
 
-1. Open a terminal window on Node or GitBash 
+1. Open a terminal window on your favorite CLI
 2. Clone the repo into a local directory of your choice
    ```sh
    git clone https://github.com/reaktionlab/chess-app.git
