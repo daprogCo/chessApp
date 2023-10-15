@@ -2,7 +2,7 @@ import React, { useContext } from "react";
 import { GameContext } from './Context';
 import Piece from "./Piece"
 
-const Square = (props) => {
+const Square = props => {
     const { pieces, board, actions } = useContext(GameContext);
 
     const pieceComponent = () => {

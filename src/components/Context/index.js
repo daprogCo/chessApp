@@ -1,33 +1,47 @@
-import React, { useState   } from 'react';
+import React, { useState } from 'react';
 import Game from "../../js/Game.js";
 
 export const GameContext = React.createContext({});
 
-export const ChessGame = (props) => {
+export const ChessGame = props => {
   const [white, setWhite] = useState(true);
   const [game, setGame] = useState(new Game());
+  const [started, setStarted] = useState(false);
   const [activePiece, setActivePiece] = useState(false);
   const [pieceId, setPieceId] = useState(null);
   const [moving, setMoving] = useState(null);
   
   game.updateBoard();
-  if (!activePiece && moving) {     
+  if (!activePiece && moving && started) {     
     game.move(game.pieces[pieceId - 1], moving);
   }
 
-  const activatePossibMoves = (id) => {
+  const startGame = () => {
+    setStarted(true);
+  }
+
+  const changePlayer = choice => {
+    if (choice) {
+      setWhite(true); 
+    } else {
+      setWhite(false);
+    }
+  }
+
+  const activatePossibMoves = id => {
     setActivePiece(true);
     setPieceId(id);
     setMoving(null);
   }
 
-  const activateMoving = (square) => {
+  const activateMoving = square => {
     setActivePiece(false);
     setMoving(square.toLowerCase());
   }
 
   return (
   <GameContext.Provider value={{
+    started: started,
     player: white,
     board: {
       letters: white
@@ -41,7 +55,9 @@ export const ChessGame = (props) => {
     pieces: game.onBoard,
     actions: {
       possibMoves: activatePossibMoves,
-      moving: activateMoving
+      moving: activateMoving,
+      chooseColor: changePlayer,
+      startGame: startGame
     }
   }}>
     {props.children}
