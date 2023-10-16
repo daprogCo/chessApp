@@ -1,4 +1,4 @@
-# chess-app
+# chessApp
 
 My take on the classical portfolio chess app!
 
